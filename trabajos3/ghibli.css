@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-image: url(244851.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+}
+h2{
+  color: aliceblue;
+}
+p{
+  color: aliceblue;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: url(244851.jpg);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 200;
+}
+
+.header-content{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+#icon-menu{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 100%;
+  color: #787878;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#icon-menu:hover{
+  opacity: 0.8;
+}
+
+
+
+
+#ctn-icon-search{
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ctn-icon-search i{
+  font-size: 25px;
+  margin-right: 10px;
+  margin-top: -15px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#ctn-icon-search i:hover{
+  color: #3c0101;
+}
+
+
+#ctn-bars-search{
+  position: fixed;
+  top: -10px;
+  width: 100%;
+  padding: 20px;
+  z-index: 9;
+  transition: all 600ms;
+}
+
+#ctn-bars-search input{
+  display: block;
+  width: 500px;
+  margin: auto;
+  color: whitesmoke;
+  padding: 10px;
+  font-size: 18px;
+  outline: 0;
+}
+
+#box-search{
+  position: fixed;
+  top: 165px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  z-index: 8;
+  overflow: hidden;
+  display: none;
+}
+
+#box-search li a{
+  display: block;
+  width: 1200px;
+  color: #777777;
+  padding: 12px 20px;
+}
+
+#box-search li a:hover{
+  background: #f3f3f3;
+}
+
+#box-search li a i{
+  margin-right: 10px;
+  color: #777777;
+}
+
+
+
+#cover-ctn-search{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  background: rgba(0, 0, 0, 0.719);
+  z-index: 7;
+  display: none;
+}
+
+
+
+video{
+  margin-left: -27px;
+  width: 539px;
+  height: 330px;
+  margin-top: -53px;
+}
+
+.contenedor img{
+  margin-top: -1%;
+  margin-left:-7%;
+  height:65px;
+  width: 179px;
+}
+  nav {
+    height: 5px;
+
+  }
+
+
+  input{
+      margin-top: 30px;
+      border-radius: 5px;
+      height: 35px;
+      width: 150px;
+      color: whitesmoke;
+      background-color: rgb(5, 5, 5);
+      box-decoration-break: none;
+  }
+  .roll{
+      width: 100%;
+      height: 1000px;
+  }
+  .twitter {
+      color: rgb(77, 150, 233);
+      font-size: 40px;
+  }
+  .facebook{
+      color: rgb(21, 21, 158);
+      font-size: 40px;
+  }
+  .instagram{
+      color: crimson;
+      font-size: 40px;
+  }
+  .blog{
+      width: 100%;
+      height: 1000px;
+  }
+.flex{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+.post{
+    padding-right: 20px;
+}
+.post img{
+    max-width: 100%;
+    width: 170px;
+    height: 240px;
+    border-radius: 5px;
+    border:6px solid whitesmoke;
+}
+.flex-child{
+    width: 180px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.overlay { 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target{
+  visibility: visible;
+  opacity: 1;
+}
+#popupBody{
+  width: 40%;
+  height: 97%;
+  padding: 2%;
+background: rgb(31, 29, 29);
+position: relative;
+margin: 1% auto;
+transition: all 5s ease-in-out;
+}
+#cerrar{
+  position: absolute;
+top: 20px;
+right: 30px;
+font-size: 25px;
+font-weight: bold;
+text-decoration: none;
+color: rgb(243, 222, 222);
+transition: all 200ms;
+}
+
